@@ -20,7 +20,7 @@ jobs:
         run: test -z $(go fmt ./...)
 
       - name: Run staticcheck
-        run: staticcheck
+        run: staticcheck ./...
 
    tests:
     name: Tests
