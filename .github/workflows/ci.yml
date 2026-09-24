@@ -19,10 +19,10 @@ jobs:
       - name: Run formatting check
         run: test -z $(go fmt ./...)
 
-      - name: Run staticcheck                                                                                                             run:    
+      - name: Run staticcheck
         run: staticcheck
 
-  tests:
+   tests:
     name: Tests
     runs-on: ubuntu-latest
 
