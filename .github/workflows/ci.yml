@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-go@v6
 
       - name: Run formatting check
-        run: test -z $(go fmt ./...
+        run: test -z $(go fmt ./...)
 
   tests:
     name: Tests
