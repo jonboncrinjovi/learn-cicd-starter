@@ -31,6 +31,6 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	}
 	w.WriteHeader(code)
 	if _, err := file.Write([]byte("data")); err != nil {
-		log.Printf("Error marshalling JSON: %s", err
+		log.Printf("Error marshalling JSON: %s", err)
 	}
 }
